@@ -44,7 +44,7 @@ Our simple program calculates this simple equation by evaluating 1 million rando
 If we can approximate the area of the circle we can easily re-arrange the equation using what we already know about the surface of a circle to approximate PI since the two are bound together mathematically.
 note that r is the radius and has the value of 0.5.
 
-![equation](http://latex.codecogs.com/gif.latex?$$&space;P_{HIT}=S_{circle}=\pi{r}^2\Longrightarrow&space;\pi=\dfrac{P_{HIT}}{{r^2}}=4\cdot&space;P_{HIT}\approx&space;\dfrac{4\cdot&space;\&hash;_{HIT}}{\&hash;_{HIT}&plus;\&hash;_{MISS}}&space;$$)
+<img src="https://latex.codecogs.com/gif.latex?P_{HIT}=S_{circle}=\pi{r}^2\Longrightarrow&space;\pi=\dfrac{P_{HIT}}{{r^2}}=4\cdot&space;P_{HIT}\approx&space;\dfrac{4\cdot&space;\&hash;_{HIT}}{\&hash;_{HIT}&plus;\&hash;_{MISS}}" />
 
 ## Output
 
