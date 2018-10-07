@@ -29,17 +29,22 @@ Before jumping into equation let us first establish common notations:
 |![equation](http://latex.codecogs.com/gif.latex?$$S_{square}$$)  |The surface of the square (0,0) (1,0) (0,1) (1,1) which has the value of 1.|
 
 We can now write the equation:
+
 ![equation](http://latex.codecogs.com/gif.latex?$$&space;P_{HIT}=\dfrac{S_{circle}}{S_{square}}&space;=&space;\dfrac{S_{circle}}{1}=S_{circle}&space;$$) 
+
 Simply  put, the probability of a HIT point is equal to the area of the circle.
 The probability if a HIT can be approximated with the our random points, the more points used the better.
+
 ![equation](http://latex.codecogs.com/gif.latex?$$&space;P_{HIT}\approx\dfrac{\&hash;_{HIT}}{\&hash;_{HIT}&plus;\&hash;_{MISS}}&space;$$) 
+
 Our simple program calculates this simple equation by evaluating 1 million random points.
 
 ## Approx PI
 
 If we can approximate the area of the circle we can easily re-arrange the equation using what we already know about the surface of a circle to approximate PI since the two are bound together mathematically.
 note that r is the radius and has the value of 0.5.
-![equation](http://latex.codecogs.com/gif.latex?P_{HIT}=S_{circle}=\pi{r}^2\Longrightarrow&space;\pi=\dfrac{P_{HIT}}{{r^2}}=4\cdot&space;P_{HIT}\approx&space;\dfrac{4\cdot&space;\&hash;_{HIT}}{\&hash;_{HIT}&plus;\&hash;_{MISS}})
+
+![equation](http://latex.codecogs.com/gif.latex?$$&space;P_{HIT}=S_{circle}=\pi{r}^2\Longrightarrow&space;\pi=\dfrac{P_{HIT}}{{r^2}}=4\cdot&space;P_{HIT}\approx&space;\dfrac{4\cdot&space;\&hash;_{HIT}}{\&hash;_{HIT}&plus;\&hash;_{MISS}}&space;$$)
 
 ## Output
 
