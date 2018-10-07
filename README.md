@@ -19,14 +19,13 @@ The probability of a HIT point is the area of the circle divided by the total ar
 ![Described circle with a HIT and MISS example](https://i.imgur.com/QiFP02i.jpg)
 
 Before jumping into equation let us first establish common notations:
-
-| Notation       |Description                                                                |
-|----------------|---------------------------------------------------------------------------|
-|![equation](http://latex.codecogs.com/gif.latex?$$&space;P_{HIT}$$)   |The probability of a given random point to be a HIT                        |
-|$$ \#_{HIT}$$   |Number of actual random HIT points                                         |
-|$$ \#_{MISS}$$  |Number of actual random MISS points                                        |
+| Notation       |Description                    |
+|----------------|-------------------------------|
+|$$ P_{HIT}$$    |The probability of a given random point to be a HIT  |
+|$$ \#_{HIT}$$   |Number of actual random HIT points   |
+|$$ \#_{MISS}$$  |Number of actual random MISS points |
 |$$S_{circle}$$  | The surface of the circle described above center = (0.5,0.5) radios = 0.5 |
-|$$S_{square}$$  |The surface of the square (0,0) (1,0) (0,1) (1,1) which has the value of 1.|
+|$$S_{square}$$  |The surface of the square (0,0) (1,0) (0,1) (1,1) which has the value of 1. |
 
 We can now write the equation:
 $$
@@ -44,7 +43,8 @@ If we can approximate the area of the circle we can easily re-arrange the equati
 note that r is the radius and has the value of 0.5.
 
 $$
-![equation](http://latex.codecogs.com/gif.latex?P_{HIT}=S_{circle}=\pi{r}^2\Longrightarrow&space;\pi=\dfrac{P_{HIT}})
+P_{HIT}=S_{circle}=\pi{r}^2\Longrightarrow \pi=\dfrac{P_{HIT}}{{r^2}}=4\cdot P_{HIT}\approx
+\dfrac{4\cdot \#_{HIT}}{\#_{HIT}+\#_{MISS}}
 $$
 
 ## Output
