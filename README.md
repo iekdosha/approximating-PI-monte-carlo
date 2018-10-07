@@ -16,7 +16,10 @@ For our example (and the example in the code) our shape will be a circle centere
 Next step would be to random a large amount of points inside the box (0,0) (1,0) (0,1) (1,1).
 We call each random point inside the circle a HIT and a point outside the circle a MISS.
 The probability of a HIT point is the area of the circle divided by the total area of the square in which we random our point in.
-![Described circle with a HIT and MISS example](https://i.imgur.com/QiFP02i.jpg)
+
+<p align="left">
+  <img width="300" height="300" src="https://i.imgur.com/QiFP02i.jpg">
+</p>
 
 Before jumping into equation let us first establish common notations:
 
@@ -30,12 +33,12 @@ Before jumping into equation let us first establish common notations:
 
 We can now write the equation:
 
-![equation](http://latex.codecogs.com/gif.latex?$$&space;P_{HIT}=\dfrac{S_{circle}}{S_{square}}&space;=&space;\dfrac{S_{circle}}{1}=S_{circle}&space;$$) 
+<img src="https://latex.codecogs.com/gif.latex?P_{HIT}=\dfrac{S_{circle}}{S_{square}}&space;=&space;\dfrac{S_{circle}}{1}=S_{circle}" />
 
 Simply  put, the probability of a HIT point is equal to the area of the circle.
 The probability if a HIT can be approximated with the our random points, the more points used the better.
 
-![equation](http://latex.codecogs.com/gif.latex?$$&space;P_{HIT}\approx\dfrac{\&hash;_{HIT}}{\&hash;_{HIT}&plus;\&hash;_{MISS}}&space;$$) 
+<img src="https://latex.codecogs.com/gif.latex?P_{HIT}\approx\dfrac{\&hash;_{HIT}}{\&hash;_{HIT}&plus;\&hash;_{MISS}}" />
 
 Our simple program calculates this simple equation by evaluating 1 million random points.
 
@@ -44,7 +47,7 @@ Our simple program calculates this simple equation by evaluating 1 million rando
 If we can approximate the area of the circle we can easily re-arrange the equation using what we already know about the surface of a circle to approximate PI since the two are bound together mathematically.
 note that r is the radius and has the value of 0.5.
 
-![equation](http://latex.codecogs.com/gif.latex?$$&space;P_{HIT}=S_{circle}=\pi{r}^2\Longrightarrow&space;\pi=\dfrac{P_{HIT}}{{r^2}}=4\cdot&space;P_{HIT}\approx&space;\dfrac{4\cdot&space;\&hash;_{HIT}}{\&hash;_{HIT}&plus;\&hash;_{MISS}}&space;$$)
+<img src="https://latex.codecogs.com/gif.latex?P_{HIT}=S_{circle}=\pi{r}^2\Longrightarrow&space;\pi=\dfrac{P_{HIT}}{{r^2}}=4\cdot&space;P_{HIT}\approx&space;\dfrac{4\cdot&space;\&hash;_{HIT}}{\&hash;_{HIT}&plus;\&hash;_{MISS}}" />
 
 ## Output
 
